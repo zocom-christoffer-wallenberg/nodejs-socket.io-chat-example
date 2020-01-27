@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <title>Chat</title>
+    </head>
+    <body>
+        <main class="wrapper">
+            <section class="login">
+                <input type="text" name="" placeholder="Användarnamn" id="message" class="login__input">
+                <button id="submit" class="login__button">Skicka</button>
+            </section>
+            <div class="chat">
+                <section class="chat-area"></section>
+                <section class="submit-message">
+                    <input type="text" name="" id="chat-message" class="submit-message__input">
+                    <p class="typingMessage"></p>
+                    <button id="send" class="submit-message__button">Skicka</button>
+                </section>
+            </div>
+        </main>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
